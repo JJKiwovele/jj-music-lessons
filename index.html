@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>JJ Music Lessons Online</title>
+<style>
+  :root{
+    --navy:#0b2747;
+    --navy2:#153b63;
+    --gold:#d7b35a;
+    --cream:#fbf8f1;
+    --ink:#172235;
+    --muted:#667085;
+    --line:#e8e3d8;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    background:var(--cream);
+    color:var(--ink);
+  }
+  .hero{
+    background:linear-gradient(135deg,var(--navy),var(--navy2));
+    color:white;
+    padding:72px 24px 56px;
+    text-align:center;
+  }
+  .hero h1{
+    margin:0;
+    font-size:clamp(2.2rem,6vw,4.6rem);
+    line-height:1;
+    letter-spacing:-.03em;
+  }
+  .hero .gold{color:#f0d27e}
+  .hero p{
+    max-width:760px;
+    margin:20px auto 0;
+    font-size:1.1rem;
+    line-height:1.7;
+    color:#e7edf4;
+  }
+  .tags{
+    margin-top:26px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+  .tag{
+    border:1px solid rgba(255,255,255,.2);
+    background:rgba(255,255,255,.08);
+    padding:9px 14px;
+    border-radius:999px;
+    font-size:.9rem;
+  }
+  .wrap{
+    max-width:1080px;
+    margin:-26px auto 56px;
+    padding:0 20px;
+  }
+  .card{
+    background:white;
+    border:1px solid var(--line);
+    border-radius:22px;
+    box-shadow:0 18px 50px rgba(11,39,71,.10);
+    overflow:hidden;
+  }
+  .grid{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+  }
+  .info{
+    padding:38px;
+    background:#fffaf0;
+    border-right:1px solid var(--line);
+  }
+  .info h2,.form h2{margin-top:0;font-size:1.7rem}
+  .info p{color:var(--muted);line-height:1.65}
+  .feature{
+    display:flex;
+    gap:14px;
+    margin:22px 0;
+  }
+  .dot{
+    width:38px;height:38px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    background:var(--navy);color:#fff;flex:0 0 auto;
+    font-size:1rem;
+  }
+  .feature b{display:block;margin-bottom:4px}
+  .feature span{color:var(--muted);font-size:.95rem;line-height:1.4}
+  .form{padding:38px}
+  label{display:block;font-weight:650;margin:16px 0 8px}
+  input, select, textarea{
+    width:100%;
+    border:1px solid #d7dce2;
+    border-radius:12px;
+    padding:13px 14px;
+    font:inherit;
+    color:var(--ink);
+    background:white;
+  }
+  textarea{min-height:110px;resize:vertical}
+  .row{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+  }
+  .btn{
+    margin-top:22px;
+    width:100%;
+    border:none;
+    border-radius:14px;
+    padding:15px 18px;
+    background:var(--navy);
+    color:white;
+    font-size:1rem;
+    font-weight:750;
+    cursor:pointer;
+  }
+  .btn:hover{background:#12385f}
+  .note{
+    margin-top:12px;
+    font-size:.86rem;
+    color:var(--muted);
+    line-height:1.5;
+  }
+  .footer{
+    text-align:center;
+    padding:0 20px 44px;
+    color:var(--muted);
+  }
+  .footer strong{color:var(--navy)}
+  @media (max-width:780px){
+    .grid{grid-template-columns:1fr}
+    .info{border-right:none;border-bottom:1px solid var(--line)}
+    .row{grid-template-columns:1fr}
+    .hero{padding-top:56px}
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <h1><span class="gold">JJ</span> Music Lessons Online</h1>
+  <p>Personalized online instruction for beginners through advanced students. Practical, encouraging lessons built around your goals.</p>
+  <div class="tags">
+    <span class="tag">Piano</span>
+    <span class="tag">Jazz</span>
+    <span class="tag">Music Theory</span>
+    <span class="tag">Bass</span>
+    <span class="tag">Ear Training</span>
+    <span class="tag">Improvisation</span>
+  </div>
+</section>
+
+<main class="wrap">
+  <section class="card">
+    <div class="grid">
+      <aside class="info">
+        <h2>Book a lesson</h2>
+        <p>Choose an available lesson time through Calendly without sharing or calling a personal phone number.</p>
+
+        <div class="feature">
+          <div class="dot">✓</div>
+          <div>
+            <b>All ages</b>
+            <span>Kids, teens, and adults are welcome.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="dot">♫</div>
+          <div>
+            <b>Beginner to advanced</b>
+            <span>Lessons are tailored to your current level and goals.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="dot">⌂</div>
+          <div>
+            <b>Online from anywhere</b>
+            <span>Learn from home using Zoom or your preferred video platform.</span>
+          </div>
+        </div>
+
+        <div class="feature">
+          <div class="dot">↗</div>
+          <div>
+            <b>Practical progress</b>
+            <span>Technique, repertoire, theory, ear training, and musicianship.</span>
+          </div>
+        </div>
+      </aside>
+
+      <section class="form">
+        <h2>Request your lesson</h2>
+        <form id="bookingForm">
+          <div class="row">
+            <div>
+              <label for="name">Student name</label>
+              <input id="name" name="name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label for="age">Student age</label>
+              <select id="age" name="age" required>
+                <option value="">Choose one</option>
+                <option>Under 8</option>
+                <option>8–12</option>
+                <option>13–17</option>
+                <option>18–25</option>
+                <option>26–44</option>
+                <option>45+</option>
+              </select>
+            </div>
+            <div>
+              <label for="subject">Lesson type</label>
+              <select id="subject" name="subject" required>
+                <option value="">Choose one</option>
+                <option>Piano</option>
+                <option>Jazz Piano</option>
+                <option>Music Theory</option>
+                <option>Electric Bass</option>
+                <option>Upright Bass</option>
+                <option>Ear Training</option>
+                <option>Improvisation</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="level">Experience level</label>
+          <select id="level" name="level">
+            <option>Complete beginner</option>
+            <option>Some experience</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+
+          <div class="row">
+            <div>
+              <label for="day">Preferred day</label>
+              <input id="day" name="day" placeholder="e.g. Friday" />
+            </div>
+            <div>
+              <label for="time">Preferred time</label>
+              <input id="time" name="time" placeholder="e.g. 5:00 PM Central" />
+            </div>
+          </div>
+
+          <label for="goals">What would you like to learn?</label>
+          <textarea id="goals" name="goals" placeholder="Tell JJ about your goals, favorite styles, current pieces, or anything else that would help."></textarea>
+
+          <button class="btn" type="submit">Send Booking Request</button>
+          <p class="note">This version opens the visitor's email app with the booking information filled in. Your booking request will open in your email app addressed to JJ Music Lessons.</p>
+        </form>
+      </section>
+    </div>
+  </section>
+</main>
+
+<div class="footer">
+  <strong>JJ Music Lessons Online</strong><br/>
+  Music changes lives.
+</div>
+
+<script>
+  // Booking is handled through Calendly:
+  // https://calendly.com/jjkiwovele/jj-music-lessons-online
+</script>
+</body>
+</html>
